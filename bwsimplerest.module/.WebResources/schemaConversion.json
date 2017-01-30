@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/bwsimplerest.module/Service Descriptors/bwsimplerest.module.hello-hello.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1485802755253"
+}]}
