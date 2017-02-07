@@ -10,6 +10,21 @@
   </parent>
   <artifactId>bwsimplerest</artifactId>
   <packaging>bwear</packaging>
+  <properties>
+    <deployToAdmin>true</deployToAdmin>
+    <profile>default.substvar</profile>
+    <agentHost>0.0.0.0</agentHost>
+    <domain>bwsimplerest.module-Domain</domain>
+    <appSpace>bwsimplerest.module-AppSpace</appSpace>
+    <appSpaceDesc></appSpaceDesc>
+    <redeploy>false</redeploy>
+    <httpPort>11001</httpPort>
+    <agentPort>8079</agentPort>
+    <osgiPort></osgiPort>
+    <domainDesc></domainDesc>
+    <appNode>bwsimplerest.module-AppNode</appNode>
+    <appNodeDesc></appNodeDesc>
+  </properties>
   <build>
     <plugins>
       <plugin>
@@ -17,7 +32,21 @@
         <artifactId>bw6-maven-plugin</artifactId>
         <version>1.1.0</version>
         <extensions>true</extensions>
-        <configuration />
+        <configuration>
+          <deployToAdmin>${deployToAdmin}</deployToAdmin>
+          <agentHost>${agentHost}</agentHost>
+          <agentPort>${agentPort}</agentPort>
+          <domain>${domain}</domain>
+          <domainDesc>${domainDesc}</domainDesc>
+          <appSpace>${appSpace}</appSpace>
+          <appSpaceDesc>${appSpaceDesc}</appSpaceDesc>
+          <appNode>${appNode}</appNode>
+          <appNodeDesc>${appNodeDesc}</appNodeDesc>
+          <osgiPort>${osgiPort}</osgiPort>
+          <httpPort>${httpPort}</httpPort>
+          <redeploy>${redeploy}</redeploy>
+          <profile>${profile}</profile>
+        </configuration>
       </plugin>
     </plugins>
   </build>
