@@ -14,15 +14,15 @@
     <deployToAdmin>true</deployToAdmin>
     <profile>default.substvar</profile>
     <agentHost>10.200.10.1</agentHost>
-    <domain>ec-domain</domain>
-    <appSpace>ec-appspace-1</appSpace>
+    <domain>ec-domain-qa</domain>
+    <appSpace>ec-appspace-qa-1</appSpace>
     <appSpaceDesc></appSpaceDesc>
-    <redeploy>false</redeploy>
-    <httpPort>11001</httpPort>
     <agentPort>8079</agentPort>
+    <httpPort>11001</httpPort>
+    <redeploy>true</redeploy>
     <osgiPort></osgiPort>
     <domainDesc></domainDesc>
-    <appNode>ec-appnode-1</appNode>
+    <appNode>ec-appnode-qa-1</appNode>
     <appNodeDesc></appNodeDesc>
   </properties>
   <build>
