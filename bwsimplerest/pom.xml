@@ -18,7 +18,7 @@
     <appSpace>ec-appspace-qa-1</appSpace>
     <appSpaceDesc></appSpaceDesc>
     <agentPort>8079</agentPort>
-    <httpPort>11001</httpPort>
+    <httpPort>12001</httpPort>
     <redeploy>true</redeploy>
     <osgiPort></osgiPort>
     <domainDesc></domainDesc>
