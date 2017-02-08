@@ -13,7 +13,7 @@
   <properties>
     <deployToAdmin>true</deployToAdmin>
     <profile>default.substvar</profile>
-    <agentHost>0.0.0.0</agentHost>
+    <agentHost>10.200.10.1</agentHost>
     <domain>bwsimplerest.module-Domain</domain>
     <appSpace>bwsimplerest.module-AppSpace</appSpace>
     <appSpaceDesc></appSpaceDesc>
