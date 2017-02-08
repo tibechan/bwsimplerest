@@ -13,16 +13,16 @@
   <properties>
     <deployToAdmin>true</deployToAdmin>
     <profile>default.substvar</profile>
-    <agentHost>0.0.0.0</agentHost>
-    <domain>bwsimplerest.module-Domain</domain>
-    <appSpace>bwsimplerest.module-AppSpace</appSpace>
+    <agentHost>10.200.10.1</agentHost>
+    <domain>echan-domain</domain>
+    <appSpace>echan-appspace-1</appSpace>
     <appSpaceDesc></appSpaceDesc>
-    <redeploy>false</redeploy>
-    <httpPort>11001</httpPort>
     <agentPort>8079</agentPort>
+    <httpPort>11001</httpPort>
+    <redeploy>true</redeploy>
     <osgiPort></osgiPort>
     <domainDesc></domainDesc>
-    <appNode>bwsimplerest.module-AppNode</appNode>
+    <appNode>echan-appnode-1</appNode>
     <appNodeDesc></appNodeDesc>
   </properties>
   <build>
