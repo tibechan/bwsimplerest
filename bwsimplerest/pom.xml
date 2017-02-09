@@ -12,7 +12,7 @@
   <packaging>bwear</packaging>
   <properties>
     <deployToAdmin>true</deployToAdmin>
-    <profile>default.substvar</profile>
+    <profile>QA.substvar</profile>
     <agentHost>10.200.10.1</agentHost>
     <domain>ec-domain-qa</domain>
     <appSpace>ec-appspace-qa-1</appSpace>

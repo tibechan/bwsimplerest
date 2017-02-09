@@ -22,6 +22,7 @@
   <sca:property xmi:id="_bhrO0OccEeavGOPfRhLWeQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_bhtrEOccEeavGOPfRhLWeQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_bhwHUOccEeavGOPfRhLWeQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_FkrMkO7eEeaDNooyTCmcYg" name="/http/helloPort" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_bS2vsOccEeavGOPfRhLWeQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_bS390OccEeavGOPfRhLWeQ" processName="bwsimplerest.module.hello"/>
     <sca:service xmi:id="_hZ-0EOceEeavGOPfRhLWeQ" name="hello">
