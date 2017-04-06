@@ -6,6 +6,8 @@
     xmlns:info="http://www.tibco.com/bw/process/info"
     xmlns:ns="http://www.tibco.com/pe/EngineTypes"
     xmlns:ns0="http://xmlns.example.com/20170130104634PLT"
+    xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/jdbc+fc4d6938-7d99-4fe1-bff2-4bd7c0045d9b+input"
+    xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jdbc+fc4d6938-7d99-4fe1-bff2-4bd7c0045d9b+output"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
@@ -385,7 +387,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="99"
+                                    height="113"
                                     width="381" xsi:type="notation:Bounds"/>
                                     </children>
 
@@ -405,10 +407,9 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
 
                                     <layoutConstraint
-                                    height="-45"
-                                    width="-76"
-                                    x="30"
-                                    xsi:type="notation:Bounds" y="20"/>
+                                    height="113"
+                                    width="384"
+                                    x="15" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -420,7 +421,9 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
 
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    <layoutConstraint
+                                    height="137"
+                                    width="424" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -477,8 +480,9 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0"/>
                                     <layoutConstraint
-                                    height="140"
-                                    width="485" xsi:type="notation:Bounds"/>
+                                    height="156"
+                                    width="486"
+                                    x="2" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -490,9 +494,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
-                                    height="172" width="561"
-                                    x="20"
-                                    xsi:type="notation:Bounds" y="20"/>
+                                    height="186" width="561" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -506,9 +508,8 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
-                                    <layoutConstraint height="108"
-                                    width="400" x="2"
-                                    xsi:type="notation:Bounds" y="2"/>
+                                    <layoutConstraint height="384"
+                                    width="515" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -587,6 +588,7 @@
                                     <tibex:partBinding
                                     expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20170130104634PLT&quot; xmlns:tns1=&quot;http://www.example.com/namespaces/tns/1485802755253&quot; xmlns:tns2=&quot;http://xmlns.example.com/hello/parameters&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;get.parameters&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:hello>&#xa;            &lt;tns1:message>&#xa;                &lt;xsl:value-of select=&quot;concat(&amp;quot;Hello &amp;quot;, upper-case($get.parameters/tns2:name), &amp;quot;, have a wonderful day!&amp;quot;)&quot;/>&#xa;            &lt;/tns1:message>&#xa;        &lt;/tns1:hello>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
+                                <bpws:correlations/>
                             </bpws:reply>
                         </bpws:flow>
                     </bpws:scope>
