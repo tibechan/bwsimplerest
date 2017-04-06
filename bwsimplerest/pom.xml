@@ -17,7 +17,7 @@
     <domain>ec-domain</domain>
     <appSpace>ec-appspace-1</appSpace>
     <appSpaceDesc></appSpaceDesc>
-    <redeploy>false</redeploy>
+    <redeploy>true</redeploy>
     <httpPort>11001</httpPort>
     <agentPort>8079</agentPort>
     <osgiPort></osgiPort>
